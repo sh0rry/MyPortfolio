@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Hasna Aisha Safa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#F277B1",
+          },
+        },
+      },
+    };
+  </script>
+
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <nav id="navbar" class="fixed top-0 w-full px-6 py-4 bg-white/80 backdrop-blur-md shadow-sm flex justify-between items-center z-50">
+    <h1 class="text-2xl font-bold text-primary">Portfolio</h1>
+    <ul class="hidden md:flex space-x-6 text-lg">
+      <li><a href="#home" class="hover:text-primary">Home</a></li>
+      <li><a href="#about" class="hover:text-primary">About</a></li>
+      <li><a href="#skills" class="hover:text-primary">Skills</a></li>
+      <li><a href="#projects" class="hover:text-primary">Projects</a></li>
+      <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-4xl md:text-6xl font-bold">Halo, saya <span class="text-primary">Hasna Aisha Safa</span></h2>
+    <p class="text-gray-600 mt-4 text-lg max-w-xl">
+      Back-End Developer
+    </p>
+    <a href="#about"><button class="mt-6 px-6 py-3 bg-primary text-white rounded-lg hover:bg-pink-500 transition">
+      y
+    </button></a>
+  </section>
+
+  <section id="about" class="px-6 py-20">
+  <h2 class="text-3xl font-bold text-primary mb-8">About Me</h2>
+  <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
+    <img 
+      src="gweh.jpg" 
+      alt="Foto Profil"
+      class="w-48 h-48 object-cover rounded-xl shadow-lg"
+    />
+
+    <div class="max-w-xl">
+      <p class="text-lg leading-relaxed">
+        Saya adalah siswi SMKN 11 Semarang dari jurusan pengembangan GIM yang belajar web development. Saya berharap suatu saat saya bisa menjadi Full Stack Developer dan membangun hal-hal kreatif.
+      </p>
+    </div>
+  </div>
+  </section>
+
+  <section id="skills" class="px-6 py-20 bg-white">
+    <h2 class="text-3xl font-bold text-primary mb-6">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="p-4 rounded-lg shadow bg-gray-100 text-center font-semibold">HTML</div>
+      <div class="p-4 rounded-lg shadow bg-gray-100 text-center font-semibold">CSS</div>
+      <div class="p-4 rounded-lg shadow bg-gray-100 text-center font-semibold">PHP</div>
+      <div class="p-4 rounded-lg shadow bg-gray-100 text-center font-semibold">UI/UX</div>
+      <div class="p-4 rounded-lg shadow bg-gray-100 text-center font-semibold">MySQL</div>
+      <div class="p-4 rounded-lg shadow bg-gray-100 text-center font-semibold">Laravel</div>
+    </div>
+  </section>
+
+  <section id="projects" class="px-6 py-20">
+    <h2 class="text-3xl font-bold text-primary mb-6">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="p-6 bg-white shadow-lg rounded-xl">
+        <h3 class="text-xl font-bold mb-2">Project 1</h3>
+        <p class="text-gray-600 mb-4">Deskripsi singkat project kamu.</p>
+        <a href="#" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-pink-500 transition">Lihat</a>
+      </div>
+
+      <div class="p-6 bg-white shadow-lg rounded-xl">
+        <h3 class="text-xl font-bold mb-2">Project 2</h3>
+        <p class="text-gray-600 mb-4">Deskripsi singkat project kamu.</p>
+        <a href="#" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-pink-500 transition">Lihat</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="px-6 py-20 bg-white">
+    <h2 class="text-3xl font-bold text-primary mb-4">Contact</h2>
+    <p class="text-lg">Email:<a href="mailto:hasnaaisha167@gmail.com"> hasnaaisha167@gmail.com</a></p>
+    <p class="text-lg">WhatsApp:<a href="https://wa.me/6285888038045"> +62 858-8803-8045</a></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
